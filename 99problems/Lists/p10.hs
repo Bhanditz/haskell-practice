@@ -1,5 +1,9 @@
 -- Run-length encoding of a list
 
+module Problem10
+    (encode
+    ) where
+
 encode :: (Eq a) => [a] -> [(Integer, a)]
 encode [] = []
 encode (x:xs) = encode' 1 x xs
